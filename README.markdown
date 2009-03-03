@@ -2,7 +2,7 @@ inbox count
 ===============
 inbox_count tells you how many email are in your inbox.
 -------------------------------------------------------
-`
+
     gilgamesh:~/projects/inbox_count $ ./inbox_count.py -h
     Usage: inbox_count.py [options] [-u USERNAME -s HOST]
     
@@ -22,7 +22,7 @@ inbox_count tells you how many email are in your inbox.
       --no-ssl              Do not use SSL.
       -v, --verbose         Be verbose.
       --debug               Be really verbose.
-`
+
 
 Example
 -------
