@@ -1,8 +1,9 @@
 inbox count
 ===============
-inbox_count tells you how many email are in your inbox.
+inbox_count tells you how many email messages are in your inbox.
 -------------------------------------------------------
-
+Usage
+-----
     gilgamesh:~/projects/inbox_count $ ./inbox_count.py -h
     Usage: inbox_count.py [options] [-u USERNAME -s HOST]
     
@@ -32,6 +33,7 @@ Example
 If you don't specify a password file or a password on the command line, inbox_count will ask you interactively.
 
     gilgamesh:~/projects/inbox_count$ ./inbox_count.py -u example_user -s email.example.org
+    Password:
     25
 
 
