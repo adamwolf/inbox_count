@@ -2,7 +2,7 @@
 """
 inbox_count.py
  
-inbox_count tells you how many email are in your inbox. 
+inbox_count tells you how many email messages are in your inbox. 
 
 http://feelslikeburning.com/projects/inbox_count/
 """
@@ -21,7 +21,7 @@ http://feelslikeburning.com/projects/inbox_count/
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
-import sys, imaplib, getpass, logging, ConfigParser
+import sys, imaplib, getpass, logging
 from optparse import OptionParser
 
 def connect(host, port, username, password, ssl=True):
@@ -84,9 +84,13 @@ Logs into IMAP server HOST and displays the number of messages in USERNAME's inb
 def get_inbox_count(server):
     """Returns the count of the server's INBOX"""
     status, count = server.select('INBOX', readonly=True)
+    #this count includes DELETED messages!  Guess who didn't know that about IMAP...
     logger.debug("Server returned status: %s", status)
     logger.debug("Server returned count: %s", count)
-    count = int(count[0])
+    status, message_numbers = server.search(None, 'UNDELETED')
+    logger.debug("Server returned status: %s", status)
+    logger.debug("Server returned UNDELETED message numbers: %s", message_numbers)
+    count = len(message_numbers[0].split())
     return count
 
 def parse_password_file(filename):
