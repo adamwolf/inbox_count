@@ -49,6 +49,14 @@ Security
 --------
 Because command line arguments are usually available to other users on a system, inbox_count.py lets you specify the password in a password file.  You can use filesystem permissions to lock down that password.
 
+Changelog
+---------
+For a detailed changelog, use the git history currently available at [Github](http://github.com/adamwolf/inbox_count).
+
+v1.2: Fixed nasty bug where inbox_count included recently deleted messages.
+v1.1: Documentation fixes.
+v1.0: Initial release
+
 Licensing
 ---------
 This software is copyright 2009 Adam Wolf, and is distributed under the terms of the GNU General Public License.
