@@ -1,5 +1,7 @@
 inbox count
 ===============
+inbox_count tells you how many email are in your inbox.
+-------------------------------------------------------
 `
     gilgamesh:~/projects/inbox_count $ ./inbox_count.py -h
     Usage: inbox_count.py [options] [-u USERNAME -s HOST]
@@ -35,7 +37,7 @@ If you don't specify a password file or a password on the command line, inbox_co
 
 Motivation
 ----------
-I was inspired by a blog post at http://thomas.apestaart.org/log/?p=785. In it, Thomas uses a script to graph the number of emails in his Evolution email inbox, helping him turn "Inbox Zero" into a game.  I don't use Evolution.
+I was inspired by a [blog post](http://thomas.apestaart.org/log/?p=785). In it, Thomas uses a script to graph the number of emails in his Evolution email inbox, helping him turn "Inbox Zero" into a game.  I don't use Evolution.
 
 In that vein, this script returns a return code equal to the number of emails in your inbox.  Unix tradition is that a return code of zero is success.
 
@@ -64,9 +66,9 @@ This software is copyright 2009 Adam Wolf, and is distributed under the terms of
 
 Troubleshooting, Questions, or Comments:
 ----------------------------------------
-inbox_count is located at http://feelslikeburning.com/projects/inbox_count
+inbox_count is located at [http://feelslikeburning.com/projects/inbox_count](http://feelslikeburning.com/projects/inbox_count).
 
-The code is currently maintained at http://github.com/adamwolf/inbox_count
+The code is currently maintained at [Github](http://github.com/adamwolf/inbox_count).
 
-Feel free to contact me at http://feelslikeburning.com/contact
+Feel free to contact me at [http://feelslikeburning.com/contact](http://feelslikeburning.com/contact)!
 
