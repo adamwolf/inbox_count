@@ -1,5 +1,6 @@
 inbox count
 ===============
+`
     gilgamesh:~/projects/inbox_count $ ./inbox_count.py -h
     Usage: inbox_count.py [options] [-u USERNAME -s HOST]
     
@@ -19,7 +20,7 @@ inbox count
       --no-ssl              Do not use SSL.
       -v, --verbose         Be verbose.
       --debug               Be really verbose.
-
+`
 
 Example
 -------
