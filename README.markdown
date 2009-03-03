@@ -1,35 +1,35 @@
 inbox count
 ===============
-> gilgamesh:~/projects/inbox_count $ ./inbox_count.py -h
-> Usage: inbox_count.py [options] [-u USERNAME -s HOST]
-> 
-> Logs into IMAP server HOST and displays the number of messages in USERNAME's inbox.
-> 
-> Options:
->   -h, --help            show this help message and exit
->   -u USERNAME, --user=USERNAME
->                         Username to log into server
->   --password=PASSWORD   Password to log into server.  If not included and
->                         password file not specified, password will be asked
->                         for interactively.
->   -s HOST, --server=HOST
->                         Address of server
->   -p PORT, --port=PORT  Port of server, defaults to 993
->   --password-file=file  Read password from password file FILE
->   --no-ssl              Do not use SSL.
->   -v, --verbose         Be verbose.
->   --debug               Be really verbose.
+    gilgamesh:~/projects/inbox_count $ ./inbox_count.py -h
+    Usage: inbox_count.py [options] [-u USERNAME -s HOST]
+    
+    Logs into IMAP server HOST and displays the number of messages in USERNAME's inbox.
+    
+    Options:
+      -h, --help            show this help message and exit
+      -u USERNAME, --user=USERNAME
+                            Username to log into server
+      --password=PASSWORD   Password to log into server.  If not included and
+                            password file not specified, password will be asked
+                            for interactively.
+      -s HOST, --server=HOST
+                            Address of server
+      -p PORT, --port=PORT  Port of server, defaults to 993
+      --password-file=file  Read password from password file FILE
+      --no-ssl              Do not use SSL.
+      -v, --verbose         Be verbose.
+      --debug               Be really verbose.
 
 
 Example
 -------
-> gilgamesh:~/projects/inbox_count$ ./inbox_count.py -u example_user -s email.example.org --password-file password
-> 25
+    gilgamesh:~/projects/inbox_count$ ./inbox_count.py -u example_user -s email.example.org --password-file password
+    25
 
 If you don't specify a password file or a password on the command line, inbox_count will ask you interactively.
 
-> gilgamesh:~/projects/inbox_count$ ./inbox_count.py -u example_user -s email.example.org
-> 25
+    gilgamesh:~/projects/inbox_count$ ./inbox_count.py -u example_user -s email.example.org
+    25
 
 
 Motivation
