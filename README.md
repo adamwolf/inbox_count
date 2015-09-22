@@ -59,7 +59,7 @@ v1.0: Initial release
 
 Licensing
 ---------
-This software is copyright 2009 Adam Wolf, and is distributed under the terms of the GNU General Public License.
+This software is copyright 2009-2016 Adam Wolf, and is distributed under the terms of the GNU General Public License.
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -76,9 +76,6 @@ This software is copyright 2009 Adam Wolf, and is distributed under the terms of
 
 Troubleshooting, Questions, or Comments:
 ----------------------------------------
-inbox_count is located at [http://feelslikeburning.com/projects/inbox_count](http://feelslikeburning.com/projects/inbox_count).
+inbox_count is located at [http://github.com/adamwolf/inbox_count)](http://github.com/adamwolf/inbox_count).
 
-The code is currently maintained at [Github](http://github.com/adamwolf/inbox_count).
-
-Feel free to contact me at [http://feelslikeburning.com/contact](http://feelslikeburning.com/contact)!
-
+Please make a Github issue with any feedback or problems you have with inbox_count.  Thanks!
